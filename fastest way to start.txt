@@ -1,10 +1,8 @@
 Create repostory in GitHub.
 
-Link VisualStudio Code to GitHub
+Clone or Downloadbutton in GitHub, and copy the code from textbox.
 
-Clone or Downloadbutton in GitHub.
-
-Copy Code from textbox.
+start bash terminal, and enter the commands in order
 
 git config --global user.name FrostyDesigner
 
@@ -12,9 +10,9 @@ git clone https://github.com/FrostyDesigner/<reponame>.git
 
 example: git clone https://github.com/FrostyDesigner/sakurakan.git
 
-Open folder in Visual Studio Code
+Open the new created folder in Visual Studio Code.
 
-start bash terminal
+start bash terminal, make sure its location is in the new folder.
 
 npm init
 
@@ -28,6 +26,10 @@ npm install jquery@3.3.1 popper.js@1.12.9
     NOTE: the --save-dev flag means that lite-server is being installed as a development dependency, 
     which means that later, when you build your project for deployment, it will not be included in 
     the final build files, since it is only needed during development. 
+
+npm install font-awesome@4.7.0
+
+npm install bootstrap-social@5.1.1
 
 edit package.json similar to below
 
@@ -63,12 +65,4 @@ edit package.json similar to below
   "homepage": "https://github.com/FrostyDesigner/sakurakan#readme"
 }
 
-npm install font-awesome@4.7.0
-npm install bootstrap-social@5.1.1
-
-
-
 npm start
-
-
-
