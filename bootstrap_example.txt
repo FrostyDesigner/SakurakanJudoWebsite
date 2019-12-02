@@ -1,0 +1,191 @@
+Objectives
+
+    Set up the project folder for your first Bootstrap project as an NPM project folder.
+    Use NPM to install the appropriate dependencies, and modify the package.json file. 
+    Set up an index.html page as the homepage for your website, and insert the code necessary to use Bootstrap.
+
+
+Instructions
+
+Part 1: Initial setup
+Create your course project folder and initialize it as an NPM project
+
+    Locate your NucampFolder on your Desktop, and inside it, go into your 2-Bootstrap folder.
+    Create a folder with the name nucampsite inside the 2-Bootstrap folder.
+    Open it with VS Code. 
+        In Windows, you can do this by right clicking on the folder and selecting "Open with VS Code".
+        In MacOS, you can do this by dragging the folder to the VS Code icon in the dock. 
+    Open the VS Code integrated terminal using Ctrl+`.
+    Make sure that you are inside the nucampsite folder, then in your terminal, type:
+
+npm init 
+
+    Press enter through each of the prompts to accept the default values. 
+
+
+Install dependencies
+
+    Next, install the package dependencies for this project, making sure to use the provided version numbers: 
+
+npm install lite-server@2.3.0 --save-dev
+
+npm install bootstrap@4.0.0
+
+npm install jquery@3.3.1 popper.js@1.12.9
+
+    You will probably see some warnings and notices about newer versions. You can safely ignore them. 
+    NOTE: the --save-dev flag means that lite-server is being installed as a development dependency, which means that later, when you build your project for deployment, it will not be included in the final build files, since it is only needed during development. 
+
+
+Modify the package.json file
+
+    Open the folder in VS Code from the command prompt, using:
+
+code .
+
+    Open the package.json file (this was created by the npm init command) and replace the description, main, and scripts objects with the below code:
+
+. . .
+  "description": "This is a website for the fictional campsites review site NuCamp.",  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+ },
+. . .
+
+    In the scripts object, make sure that each line inside the curly braces ends with a comma, except for the final one.
+    The lines that you are adding to the scripts object will cause the lite-server application to run when you use the npm start command. 
+    You can set your name as the value for "author". 
+
+
+Create your course project's homepage
+
+    Next, in VS Code, create a new file in the nucampsites project folder and name it index.html. Add the code below to this file:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>NuCamp</h1>
+            <h2>a better way to camp</h2>
+        </div>
+    </header>
+
+    <div>
+        <h2>Discover & Review</h2>
+        <h3>Our Campsites</h3>
+        <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+    </div>
+
+    <div>
+        <h2>Featured Campsites</h2>
+        <h3>React Lake Campground</h3>
+        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+    </div>
+
+    <div>
+        <h2>Our Community Partners</h2>
+        <h3>Bootstrap Outfitters</h3>
+        <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+    </div>
+
+    <footer>
+        <div>
+            <h5>Links</h5>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Social</h5>
+            <a href="http://instagram.com/">Instagram</a>
+            <a href="http://facebook.com/">Facebook</a>
+            <a href="http://twitter.com/">Twitter</a>
+            <a href="http://youtube.com/">YouTube</a>
+        </div>
+        <div>
+            Tel: 1-206-555-1234<br />
+            Email: campsites@nucamp.co
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+    From your bash terminal, now type:
+
+npm start
+
+    Using the scripts that you defined in package.json, npm will start lite-server, which will open the index.html page in your default browser.
+
+
+Part 2: Bootstrap Code
+
+    Now you will add the necessary code to index.html to be able to use Bootstrap in it.
+    First, update the head element with this code:
+
+. . .
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+
+. . .
+
+    Then, after the closing footer tag but before the closing body tag, add this code to bring in the JavaScript files used by Bootstrap:
+
+. . .
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+. . .
+
+
+Summary
+
+    In this exercise, you have created a folder for your Bootstrap course project. You used NPM to install the necessary dependencies, and modified the package.json file to use lite-server. You created an index.html page, configured it to use the viewport meta tag, and linked the Bootstrap CSS and JavaScript files to it.
+
+
+OPTIONAL: GIT
+
+    From VS Code, create a .gitignore file inside the project folder, with the content:
+
+node_modules
+
+    From your bash terminal, inside the project folder, initialize a git repository with the command:
+
+git init
+
+    Add all new or changed files to the staging area, using the command:
+
+git add .
+
+    This next command will commit the staged files to your local git repository:
+
+git commit -m "Your First Bootstrap Project"
+
+    You can also set up and push to a remote repository for this project, if you wish. Revisit the chapter on remote repositories in the Git section to remember how, but instead of git-test for the remote repository name, use a more appropriate name such as nucamp-bootstrap.

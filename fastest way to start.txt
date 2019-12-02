@@ -1,0 +1,74 @@
+Create repostory in GitHub.
+
+Link VisualStudio Code to GitHub
+
+Clone or Downloadbutton in GitHub.
+
+Copy Code from textbox.
+
+git config --global user.name FrostyDesigner
+
+git clone https://github.com/FrostyDesigner/<reponame>.git
+
+example: git clone https://github.com/FrostyDesigner/sakurakan.git
+
+Open folder in Visual Studio Code
+
+start bash terminal
+
+npm init
+
+npm install lite-server@2.3 --save-dev
+
+npm install bootstrap@4.0.0
+
+npm install jquery@3.3.1 popper.js@1.12.9
+
+    You will probably see some warnings and notices about newer versions. You can safely ignore them. 
+    NOTE: the --save-dev flag means that lite-server is being installed as a development dependency, 
+    which means that later, when you build your project for deployment, it will not be included in 
+    the final build files, since it is only needed during development. 
+
+edit package.json similar to below
+
+{
+  "name": "sakurakan",
+  "version": "1.0.0",
+  "description": "website design for a local judo club and its members",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrostyDesigner/sakurakan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FrostyDesigner/sakurakan/issues"
+  },
+  "homepage": "https://github.com/FrostyDesigner/sakurakan#readme"
+}
+
+npm install font-awesome@4.7.0
+npm install bootstrap-social@5.1.1
+
+
+
+npm start
+
+
+
