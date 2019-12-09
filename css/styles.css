@@ -62,3 +62,28 @@ header h2 {
 .bgColor{
   background-color: red;
 }
+
+.yellowBelt{
+  border-style: solid;
+  border-color: yellow;
+}
+
+.orangeBelt{
+  border-style: solid;
+  border-color: orange;
+}
+
+.greenBelt{
+  border-style: solid;
+  border-color: green;
+}
+
+.blueBelt{
+  border-style: solid;
+  border-color: blue;
+}
+
+.brownBelt{
+  border-style: solid;
+  border-color: brown;
+}
