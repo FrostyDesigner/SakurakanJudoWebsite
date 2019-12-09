@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Sakurakan Judo</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/logo.jpg" class="img-fluid" /></a>
+                </div>
+                <div class="col">
+                    <h1>Sakurakan Judo</h1>
+                    <h2>A better method to learn the "gentle way"</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sakurakan JudoNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Sakurakan JudoNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="sites.html"><i class="fa fa-list fa-lg"></i>
+                            Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><i
+                                class="fa fa-address-card fa-lg"></i>
+                            Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html"><i class="fa fa-list fa-lg"></i>
+                            FAQ</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login</a>
+                </span>
+            </div>
+        </div>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" height="30" width="30" /></a>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col - 12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About Us</li>
+                </ol>
+                <h2>About Us</h2>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row">
+            <!--
+
+                <div class="col-sm-6 col-xs-12">
+                    <h3>Our Mission</h3>
+                    <p>We present a curated database of the best campsites in the vast woods and backcountry of the World
+                        Wide Web Wilderness. We increase access to adventure for the public while promoting safe and
+                        respectful use of resources. The expert wilderness trekkers on our staff personally verify each
+                        campsite to make sure that they are up to our standards. We also present a platform for campers to
+                        share reviews on campsites they have visited with each other.</p>
+                    </div>
+                </div>
+            -->
+
+            <div class="row row-content">
+                <div class="col-sm-6">
+                    <h3>Our Mission</h3>
+                    <p>We strive to represent the principles of Judo in a family friendly environment. Everyone is
+                        invited, from toddlers to senior citizens and everyone in between.
+                        Anyone is welcome to drop in and watch a class and determine if Judo is something you or your
+                        family would like to consider.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <h3 class="card-header bg-danger text-white">Facts At a Glance</h3>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-6">Club Number</dt>
+                                <dd class="col-6">OR0009</dd>
+                                <dt class="col-6">Registered</dt>
+                                <dd class="col-6">01-01-1970</dd>
+                                <dt class="col-6">Class</dt>
+                                <dd class="col-6">Class B</dd>
+                                <dt class="col-6">Current Members</dt>
+                                <dd class="col-6">44</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-body bg-light mt-3">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"It is not important to be better than someone else, but to be better than
+                                yesterday."</p>
+                            <footer class="blockquote-footer">Kano Jigoro
+                                <!--<cite title="Source Title">"Wind-Wafted Wild Flowers" -
+                                    The Open Court, 1903</cite>-->
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col">
+                    <h3>Our Sister Judo Clubs</h3>
+                    <p>As a member of the YMCA in Pierce and Kitsap Counties you are welcome to attend any of the
+                        following Judo Clubs.</p>
+                    <p>Standard Judo etiquette is requested, and each club may have its own house rules. Please
+                        introduce yourself to the acting sensei.</p>
+                    <div id="accordion">
+                        <div role="tab" class="card-header">
+                            <h4>
+                                <a data-toggle="collapse" data-target="#bootstrap">
+                                    Yushido Judo Club <small>Puyallup, WA YMCA</small>
+                                </a>
+                            </h4>
+                            <div class="collapse show" id="bootstrap" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Perseverance - Our greatest glory is not in never
+                                        falling but in rising every time we fall.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#git">
+                                        Ippon Judo Club <small>Lakewood, WA, YMCA</small>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="git" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="d-none d-sm-block">We welcome people of all ages to join judo just for
+                                            fun or to get in better shape and to learn.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Sites</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12538269622"><i class="fa fa-phone"></i>
+                            1-253-826-9622</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:sakurakansumner@gmail.com"><i
+                                class="fa fa-envelope-o"></i> sakurakansumner@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

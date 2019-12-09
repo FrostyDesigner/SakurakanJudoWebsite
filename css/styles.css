@@ -1,36 +1,64 @@
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Lobster", cursive;
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h2 {
-    color: red;
-}
+  color: red; }
 
 header h2 {
-    color: #CEC8FF;
-}
+  color: #CEC8FF; }
 
-.site-footer{
-    background-image: linear-gradient(#b7a8f8, white);
-    padding: 20px 0px;
-}
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0px; }
 
 .jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, white, white, red, black);
-}
+  margin: 0;
+  padding: 30px;
+  /*background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b); */
+  background-image: linear-gradient(to right, white, white, red, red, black);
+  color: white; }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  /*background-color: #901CAD; */
+  background-image: linear-gradient(to right, white, red, red, black);
 }
 
-.navbar{
-    background-color: red;
+.tab-content {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid #5637dd; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: white; }
+
+.bgColor{
+  background-color: red;
 }
