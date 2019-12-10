@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Sakurakan Judo</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/logo.jpg" class="img-fluid" /></a>
+                </div>
+                <div class="col">
+                    <h1>Sakurakan Judo</h1>
+                    <h2>A better method to learn the "gentle way"</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sakurakan JudoNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Sakurakan JudoNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="sites.html"><i class="fa fa-list fa-lg"></i>
+                            Sites</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><i
+                                class="fa fa-address-card fa-lg"></i>
+                            Contact</a></li>
+                    <li class="nav-item  active"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> FAQ</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login</a>
+                </span>
+            </div>
+        </div>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" height="30" width="30" /></a>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col - 12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Waza</li>
+                </ol>
+                <h2>Judo Waza</h2>
+                <hr />
+            </div>
+        </div>
+
+
+        <!--Accordion wrapper-->
+        <h2>Select the path you are interested in. </h2>
+        <button class="accordion">Nage-waza (投げ技) throwing techniques </button>
+        <div class="panel">
+            <button class="accordion">Tachi-waza (立ち技) standing techniques </button>
+            <div class="panel">
+                <button class="accordion">Te-waza (手技) hand techniques </button>
+                <div class="panel">
+                    <div class="row row-content">
+                        <div class="col-1 yellowBelt">
+                            <p>Seoi-nage</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Tai-otoshi</p>
+                        </div>
+                        <div class="col-1 greenBelt">
+                            <p>Kata-guruma</p>
+                        </div>
+                        <div class="col-1 blueBelt">
+                            <p>Uki-otoshi</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="accordion">Koshi-waza (腰技) hip techniques </button>
+                <div class="panel">
+                    <div class="row row-content">
+                        <div class="col-1 yellowBelt">
+                            <p>Uki-goshi</p>
+                        </div>
+                        <div class="col-1 yellowBelt">
+                            <p>O-goshi</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Harai-goshi</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Koshi-guruma</p>
+                        </div>
+                        <div class="col-1 greenBelt">
+                            <p>Hane-goshi</p>
+                        </div>
+                        <div class="col-1 greenBelt">
+                            <p>Tsuri-goshi</p>
+                        </div>
+                        <div class="col-1 blueBelt">
+                            <p>Utsuri-goshi</p>
+                        </div>
+                        <div class="col-1 brownBelt">
+                            <p>Ushiro-goshi</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="accordion">Ashi-waza (足技) foot and leg techniques</button>
+                <div class="panel">
+                    <div class="row row-content">
+                        <div class="col-1 yellowBelt">
+                            <p>Hiza-guruma</p>
+                        </div>
+                        <div class="col-1 yellowBelt">
+                            <p>Ouchi-gari</p>
+                        </div>
+                        <div class="col-1 yellowBelt">
+                            <p>Osoto-gari</p>
+                        </div>
+                        <div class="col-1 yellowBelt">
+                            <p>De-ashi-harai</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Kosoto-gari</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Kouchi-gari</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Uchi-mata</p>
+                        </div>
+                        <div class="col-1 orangeBelt">
+                            <p>Harai-goshi</p>
+                        </div>
+                        <div class="col-1 greenBelt">
+                            <p>Kosoto-gake</p>
+                        </div>
+                        <div class="col-1 greenBelt">
+                            <p>Ashi-guruma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Sutemi-waza (捨身技) sacrifice techniques</button>
+            <div class="panel">
+                <button class="accordion">Ma-sutemi-waza (真捨身技) rear sacrifice techniques </button>
+                <div class="panel">
+                    <div class="row row-content">
+                        <div class="col-1 greenBelt">
+                            <p>Tomoe-nage</p>
+                        </div>
+                        <div class="col-1 blueBelt">
+                            <p>Tani-otoshi</p>
+                        </div>
+                        <div class="col-1 blueBelt">
+                            <p>Sumi-gaeshi</p>
+                        </div>
+                        <div class="col-1 brownBelt">
+                            <p>Ura-nage</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="accordion">Yoko-sutemi-waza (橫捨身技) side sacrifice techniques </button>
+                <div class="panel">
+                    <div class="row row-content">
+                        <div class="col-1 greenBelt">
+                            <p>Yoko-otoshi</p>
+                        </div>
+                        <div class="col-1 blueBelt">
+                            <p>Hane-makikomi</p>
+                        </div>
+                        <div class="col-1 blueBelt">
+                            <p>Soto-makikomi</p>
+                        </div>
+                        <div class="col-1 brownBelt">
+                            <p>Yoko-wakare</p>
+                        </div>
+                        <div class="col-1 brownBelt">
+                            <p>Yoko-guruma</p>
+                        </div>
+                        <div class="col-1 brownBelt">
+                            <p>Yoko-gake</p>
+                        </div>
+                        <div class="col-1 brownBelt">
+                            <p>Uki-waza</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Katame-waza (固技) grappling techniques </button>
+        <div class="panel">
+            <button class="accordion">Osaekomi-waza (抑込技) holding or pinning techniques</button>
+            <div class="panel">
+                <div class="row row-content">
+                    <div class="col-1 brownBelt">
+                        <p>Yoko-wakare</p>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Shime-waza (絞技) strangulation techniques </button>
+            <div class="panel">
+            </div>
+            <button class="accordion">Kansetsu-waza (関節技) Joint techniques (locks) </button>
+            <div class="panel">
+            </div>
+        </div>
+
+        <!-- Accordion wrapper -->
+
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+12538269622"><i class="fa fa-phone"></i>
+                        1-253-826-9622</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:sakurakansumner@gmail.com"><i
+                            class="fa fa-envelope-o"></i> sakurakansumner@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
