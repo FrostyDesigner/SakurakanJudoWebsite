@@ -87,3 +87,8 @@ header h2 {
   border-style: solid;
   border-color: brown;
 }
+
+.purpleBelt{
+  border-style: dashed;
+  border-color: purple;
+}
