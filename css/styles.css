@@ -22,7 +22,8 @@ header h2 {
   margin: 0;
   padding: 30px;
   /*background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b); */
-  background-image: linear-gradient(to right, white, white, red, red, black);
+  background-image: linear-gradient(to right, white, red, red, black);
+  /*background-image: linear-gradient(to right, white, yellow, orange, green, blue, brown,black); */
   color: white; }
 
 .row-content {
