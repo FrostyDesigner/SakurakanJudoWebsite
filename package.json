@@ -9,7 +9,7 @@
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "watch:all": "\"npm run lite\"",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin faq.html -d dist --htmlmin -o dist/faq.html && usemin glossary.html -d dist --htmlmin -o dist/glossary.html && usemin gokyo.html -d dist --htmlmin -o dist/gokyo.html && usemin openMatCalendar.html -d dist --htmlmin -o dist/openMatCalendar.html && usemin sites.html -d dist --htmlmin -o dist/sites.html && usemin waza.html -d dist --htmlmin -o dist/waza.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
